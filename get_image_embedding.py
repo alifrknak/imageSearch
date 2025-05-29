@@ -14,7 +14,7 @@ def get_image_embedding(image_path: str) ->any:
 
     with torch.no_grad():
         outputs = model(**inputs)
-
+   
     # Extract CLS token
     embedding = outputs.last_hidden_state[:, 0, :]  # shape: [1, 768]
     embedding = embedding / embedding.norm(dim=-1, keepdim=True)  # normalize
