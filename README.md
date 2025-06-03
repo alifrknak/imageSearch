@@ -1,1 +1,1 @@
-Semantic image search using vectordb
+Semantic  search (vector search) using vectordb
